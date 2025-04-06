@@ -1,0 +1,40 @@
+{
+  "name": "business_website_automater",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup-local": "node scripts/setup-local-dev.js",
+    "dev:local": "concurrently \"npm run dev\" \"node scripts/start-local-server.js\""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
+    "express": "^4.18.2",
+    "handlebars": "^4.7.8",
+    "next": "14.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.11.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.3",
+    "mkcert": "^1.5.1",
+    "postcss": "^8.4.31",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.4.2"
+  }
+}

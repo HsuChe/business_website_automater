@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-surface-50 text-surface-900 font-sans;
+  }
+
+  /* Modern Typography Scale */
+  h1 {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply font-display text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply font-display text-2xl md:text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply font-display text-xl md:text-2xl font-semibold;
+  }
+
+  p {
+    @apply font-sans text-base md:text-lg leading-relaxed text-surface-700;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-200 text-surface-900 hover:bg-surface-300;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-4;
+  }
+
+  /* Modern Input Styles */
+  .input {
+    @apply w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all duration-200;
+  }
+
+  /* Modern Navigation Styles */
+  .nav-link {
+    @apply text-surface-600 hover:text-primary-600 transition-colors duration-200;
+  }
+
+  .nav-link-active {
+    @apply text-primary-600 font-medium;
+  }
+}
+
+/* Modern Effects and Animations */
+@layer utilities {
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-1;
+  }
+
+  .hover-glow {
+    @apply transition-[filter] duration-200 hover:drop-shadow-[0_0_15px_rgba(99,102,241,0.3)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+} 
